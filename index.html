@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowApp — Work Beautifully</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts: Syne + DM Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══ HEADER / NAVBAR ═════════════════════════════════════════ -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Flow<span>App</span></a>
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#stats">Stats</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item ms-lg-3">
+              <a class="nav-link nav-cta" href="#">Get Started</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ══ JUMBOTRON ═══════════════════════════════════════════════ -->
+  <section class="jumbotron-section" aria-label="Hero">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6">
+          <div class="jumbotron-eyebrow">✦ Now in Public Beta</div>
+          <h1 class="jumbotron-headline">
+            Work at the<br>
+            speed of<br>
+            <em>thought.</em>
+          </h1>
+          <p class="jumbotron-lead">
+            FlowApp brings your tasks, docs, and team into one focused workspace —
+            so you spend less time juggling and more time doing.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#" class="btn-primary-brand">Start for free →</a>
+            <a href="#features" class="btn-ghost-brand">See features</a>
+          </div>
+        </div>
+        <div class="col-lg-6 jumbotron-mockup">
+          <article class="mockup-card" aria-label="App preview">
+            <div class="mockup-topbar">
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+            </div>
+            <div class="mockup-bar w-90"></div>
+            <div class="mockup-bar w-70"></div>
+            <div class="mockup-bar w-90"></div>
+            <div class="mockup-bar w-55"></div>
+            <div class="mockup-bar w-70"></div>
+            <div class="mockup-metric">
+              <div class="mockup-metric-box">
+                <div class="mockup-metric-val">98%</div>
+                <div class="mockup-metric-lbl">On-time</div>
+              </div>
+              <div class="mockup-metric-box">
+                <div class="mockup-metric-val">4.2×</div>
+                <div class="mockup-metric-lbl">Faster</div>
+              </div>
+              <div class="mockup-metric-box">
+                <div class="mockup-metric-val">∞</div>
+                <div class="mockup-metric-lbl">Scale</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FEATURES / THREE-CARD GRID ══════════════════════════════ -->
+  <section class="features-section" id="features" aria-labelledby="features-heading">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-label">What we offer</p>
+        <h2 class="section-title" id="features-heading">
+          Everything you need,<br>
+          <span>nothing you don't.</span>
+        </h2>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <article class="feature-card">
+            <div class="feature-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+            <h3>Blazing Fast</h3>
+            <p>Sub-100 ms response times across all devices. FlowApp is engineered
+              for speed — from first load to final save, every interaction is instant.</p>
+            <span class="feature-tag">Performance</span>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="feature-card">
+            <div class="feature-icon"><i class="bi bi-people-fill"></i></div>
+            <h3>Real-Time Collaboration</h3>
+            <p>Work alongside your team simultaneously. Live cursors, instant comments,
+              and conflict-free merges keep everyone aligned without the chaos.</p>
+            <span class="feature-tag">Teamwork</span>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="feature-card">
+            <div class="feature-icon"><i class="bi bi-shield-lock-fill"></i></div>
+            <h3>Enterprise Security</h3>
+            <p>AES-256 encryption, SOC 2 Type II compliance, and granular role-based
+              permissions. Your data stays yours — always.</p>
+            <span class="feature-tag">Security</span>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ STATS STRIP ═════════════════════════════════════════════ -->
+  <section class="stats-section" id="stats" aria-label="Product statistics">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="stat-number">50K+</div>
+            <div class="stat-label">Active teams</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="stat-number">4.9★</div>
+            <div class="stat-label">Average rating</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="stat-number">99.9%</div>
+            <div class="stat-label">Uptime SLA</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="stat-number">140+</div>
+            <div class="stat-label">Countries</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══════════════════════════════════════════════════ -->
+  <footer id="contact" aria-label="Site footer">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-4">
+          <div class="footer-brand">Flow<span>App</span></div>
+          <p class="footer-tagline">
+            The modern workspace for teams who move fast and build things that matter.
+          </p>
+          <div class="footer-social mt-3">
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <p class="footer-heading">Product</p>
+          <ul class="footer-links">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Roadmap</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <p class="footer-heading">Stay in the loop</p>
+          <p style="font-size:0.88rem; color:#ffffff66; margin-bottom:1rem;">
+            Get product updates and early access invites — no spam, ever.
+          </p>
+          <div class="d-flex gap-2">
+            <input type="email" id="footerEmail" class="form-control footer-email-input"
+                   placeholder="you@example.com" aria-label="Email address" />
+            <button id="joinBtn" class="btn-primary-brand" style="white-space:nowrap; padding:0.6rem 1.2rem;">
+              Join →
+            </button>
+          </div>
+          <p class="footer-contact-info">
+            📬 &nbsp;hello@flowapp.io &nbsp;·&nbsp; +1 (800) 555-0199
+          </p>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <p class="footer-copy">© 2026 FlowApp Inc. All rights reserved.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="footer-bottom-link">Privacy</a>
+          <a href="#" class="footer-bottom-link">Terms</a>
+          <a href="#" class="footer-bottom-link">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="main.js"></script>
+
+</body>
+</html>
